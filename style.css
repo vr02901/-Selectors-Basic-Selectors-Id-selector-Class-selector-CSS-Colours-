@@ -1,0 +1,146 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Write CSS code below */
+.main-content{
+    
+    display: grid;
+    min-height: 1000px;
+    grid-template-columns: 300px 700px;
+    width: 90%;
+}
+.left-section{
+    grid-column: span 1;
+    background-color:skyblue;
+   
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+    display: block;
+    margin: auto;
+    width: 60%;
+    border: 5px solid white;
+    border-radius: 30%;
+  
+}
+.name{
+   
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+}
+.designation{
+    
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.social-media{
+    display: flex;
+    margin-bottom: 15px;
+   
+   
+}
+.personal-details{
+    display:inline;
+    
+    
+}
+.icon{
+    
+    width: 100%;
+    text-align: center;   
+    
+}
+.icon-contact{
+    margin-top: 5px;
+}
+a{
+    cursor: pointer;
+}
+.skills {
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem .5rem;
+}
+.skills-title{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+.progress-bar{
+    border: 1px solid white;
+    height: 4px;
+    margin-bottom: 15px;
+
+}
+
+.right-section{
+    grid-column: span 1 / span 2;
+    background-color: pink;
+}
+.right-main-content{
+    padding: 2rem 3rem;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+
+}
+table{
+    width: 50%;
+    border: 1px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+tr ,td,th{
+border: 1px solid black;
+}
+th{
+    background-color: lightblue;
+    padding: 0px 5px;
+
+}
+.about-section{
+    margin-bottom: 20px;
+}
+.experience-section{
+    margin-bottom: 20px;
+}
+.education-section{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 673px) {
+    .main-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
